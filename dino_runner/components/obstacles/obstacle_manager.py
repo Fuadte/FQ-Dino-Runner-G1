@@ -13,7 +13,7 @@ class Obstacle_manager:
         for obstacle in self.obstacles:
             obstacle.update(game_speed, self.obstacles)
             if player.rect.colliderect(obstacle.rect):
-                pygame.time.delay(2000)
+                pygame.time.delay(500)
                 game.playing = False
 
     def draw(self, screen):
