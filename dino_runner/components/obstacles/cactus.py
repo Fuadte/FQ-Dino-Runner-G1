@@ -9,7 +9,7 @@ class Cactus(Obstacle):
     def __init__(self):
         cactus = [SMALL_CACTUS, LARGE_CACTUS]
         cactus_var = random.randint(0, 2)
-        cactus_type = cactus[random.randint(0, 1)]
+        cactus_type = random.choice(cactus)
         image = cactus_type[cactus_var]
         super().__init__(image)
         if cactus_type == SMALL_CACTUS:
