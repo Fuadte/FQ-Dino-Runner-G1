@@ -21,6 +21,7 @@ class Dinosaur(Sprite):
     POSITION_Y_DUCK = 340
 
     def __init__(self):
+        self.hearts = 0
         self.type = DEFAULT_TYPE
         self.power_up_time_up = 0
         self.update_image(RUN_IMG[self.type][0])

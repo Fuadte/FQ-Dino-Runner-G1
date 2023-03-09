@@ -53,6 +53,7 @@ class Game:
             self.events()
             self.update()
             self.draw()
+        self.ambient_sound.stop()
 
     def events(self):
         for event in pygame.event.get():
