@@ -22,5 +22,5 @@ class Score:
         self.score = 0
 
     def draw(self, screen):
-        self.text.show(screen, 24, f"Score: {self.score}", (1000, 30))
-        self.text.show(screen, 24, f"HI:  {self.max_score}", (850, 30))
+        self.text.show(screen, 16, f"Score: {self.score}", pos_x = 1000, pos_y = 30)
+        self.text.show(screen, 16, f"HI: {self.max_score}", pos_x = 800, pos_y = 30)
