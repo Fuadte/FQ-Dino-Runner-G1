@@ -5,7 +5,7 @@ from dino_runner.components.text import Text
 class Score:
     def __init__(self):
         self.score = 0
-        self.max_score = 100
+        self.max_score = 0
         self.text = Text()
 
     def update(self, game):
@@ -23,4 +23,4 @@ class Score:
 
     def draw(self, screen):
         self.text.show(screen, 24, f"Score: {self.score}", (1000, 30))
-        self.text.show(screen, 24, "HI: " + str(self.max_score), (850, 30))
+        self.text.show(screen, 24, f"HI:  {self.max_score}", (850, 30))
